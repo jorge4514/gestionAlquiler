@@ -1,34 +1,106 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>  
+<html lang="es"> <!-- Idioma configurado para SEO local -->
+<head>
+  <!-- Metadatos esenciales -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.alquilerserravalencia.duckdns.org/chalets/serra/assets/casa.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://www.alquilerserravalencia.duckdns.org/chalets/serra/assets/casa.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="https://www.alquilerserravalencia.duckdns.org/assets/casa.png">
 
-  </head>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.alquilerserravalencia.duckdns.org/">
+
+  <!-- Título optimizado para SEO -->
+  <title>Alquileres en Serra y Valencia | Encuentra tu hogar ideal | Chalets y Pisos en Alquiler</title>
+
+  <!-- Meta descripción -->
+  <meta name="description" content="Encuentra las mejores opciones de alquiler en Serra y Valencia. Pisos, casas y chalets totalmente equipados. ¡Descubre tu hogar ideal con nosotros hoy mismo!">
+
+  <!-- Meta Keywords (opcional, relevancia limitada) -->
+  <meta name="keywords" content="alquileres en Serra, alquiler pisos Valencia, alquiler chalets Serra, propiedades en alquiler en Valencia, casas de alquiler en Serra">
+
+  <!-- Meta robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Alquileres en Serra y Valencia | Encuentra tu hogar ideal">
+  <meta property="og:description" content="Explora los mejores alquileres en Serra y Valencia. Encuentra tu próximo hogar con nosotros.">
+  <meta property="og:image" content="https://www.alquilerserravalencia.duckdns.org/assets/casa.png">
+  <meta property="og:url" content="https://www.alquilerserravalencia.duckdns.org/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alquileres en Serra y Valencia | Encuentra tu hogar ideal">
+  <meta name="twitter:description" content="Explora los mejores alquileres en Serra y Valencia. Encuentra tu próximo hogar con nosotros.">
+  <meta name="twitter:image" content="https://www.alquilerserravalencia.duckdns.org/assets/casa.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VD720H0BL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1VD720H0BL');
+  </script>
+
+  <!-- Estilo y fuentes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@500&display=swap');
-    
-    /* Aplicar la fuente predeterminada al proyecto */
+
     body {
       font-family: 'Afacad Flux', sans-serif;
       margin: 0;
       padding: 0;
     }
-    
-    /* Opcional: aplicar la fuente a todos los elementos */
+
+    /* General */
     * {
       font-family: 'Afacad Flux', sans-serif;
     }
+
+    .main-content {
+      margin-top: 20px;
+    }
   </style>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+</head>
+<body>
+  <noscript>
+    <strong>Lo sentimos, pero la página no funciona correctamente sin JavaScript habilitado. Por favor, actívalo para continuar.</strong>
+  </noscript>
+
+  <main id="app" class="main-content">    
+  </main> 
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Schema.org (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Alquiler Serra Valencia",
+    "url": "https://www.alquilerserravalencia.duckdns.org/",
+    "logo": "https://www.alquilerserravalencia.duckdns.org/assets/casa.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+34-667-685-753",
+      "contactType": "customer service",
+      "areaServed": "ES",
+      "availableLanguage": "es"
+    },
+    "sameAs": [
+      "https://www.facebook.com/AlquilerSerraValencia",
+      "https://twitter.com/AlquilerSerraV"
+    ]
+  }
+  </script>
+</body>
 </html>

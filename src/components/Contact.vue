@@ -1,5 +1,5 @@
 <template>
-    <section class="contact py-5">
+    <section class="contact py-5" id="contacto">
         <div class="container">
             <h2 class="text-center mb-4 fw-bold">Contacto</h2>
             <p class="text-center text-muted mb-5">¿Tienes alguna pregunta o quieres más información? Contáctanos:</p>
@@ -11,7 +11,7 @@
                         <i class="fas fa-phone-alt me-3"></i>
                         <strong>Teléfono:</strong>
                     </div>
-                    <p class="text-muted">+34 600 123 456</p>
+                    <p class="text-muted">+34 667685753</p>
                 </div>
 
                 <!-- Email -->
@@ -29,7 +29,7 @@
                         <i class="fas fa-map-marker-alt me-3"></i>
                         <strong>Dirección:</strong>
                     </div>
-                    <p class="text-muted">📍Calle falaguera 1A, Serra Valencia</p>
+                    <p class="text-muted">📍Serra, Valencia</p>
                 </div>
             </div>
         </div>

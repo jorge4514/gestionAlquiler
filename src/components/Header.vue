@@ -1,70 +1,65 @@
 <template>
-    <header>
-      <div class="logo">Falaguera1A</div>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Propiedades</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-  </template>
-  
-  <script>
-  export default {
-    name: "Header",
-  };
-  </script>
-  
-  <style scoped>
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Asegura que se mantenga encima del contenido */
-    transition: top 0.3s ease-in-out; /* Transición suave al desplazarse */
-    margin-bottom: 30px;
-  }
-  
-  /* Para que el contenido debajo del header no se superponga */
-  body {
-    padding-top: 70px; /* Ajusta este valor dependiendo de la altura del header */
-  }
-  
-  .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin: 0 15px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-  }
-  
-  nav a:hover {
-    color: #007bff;
-    transition: color 0.3s ease;
-  }
-  </style>
-  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">Tu Hogar Ideal</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#propiedades">Propiedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+</template>
+
+
+<script>
+export default {
+  name: "Header",
+};
+</script>
+
+<style scoped>
+/* Espacio para que el contenido no se solape con el header */
+body {
+  padding-top: 70px; /* Ajusta este valor según la altura del header */
+}
+
+/* Estilos adicionales si deseas personalizar */
+.navbar-brand {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.navbar-nav .nav-link {
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+</style>

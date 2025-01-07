@@ -1,11 +1,13 @@
 <template>
     <section class="container py-5">
+        <HeroSection />
         <InfoSection />
         <Properties :properties="properties" @open-lightbox="openLightbox"/>
         <SpecialOffersCarousel :specialOffers="specialOffers" @open-lightbox="openLightbox"/>
         <FeaturedCarousel :featuredImages="featuredImages" @open-lightbox="openLightbox" />        
         <Contact />
         <Lightbox :image="currentImage" :visible="lightboxVisible" @close-lightbox="closeLightbox" />
+        <Footer />
     </section>
 </template>
 
@@ -16,6 +18,8 @@ import FeaturedCarousel from './FeaturedCarousel.vue';
 import SpecialOffersCarousel from './SpecialOffersCarousel.vue';
 import Contact from './Contact.vue';
 import Lightbox from './Lightbox.vue';
+import Footer from './Footer.vue';
+import HeroSection from './HeroSection.vue';
 
 export default {
     components: {
@@ -24,7 +28,9 @@ export default {
         FeaturedCarousel,
         SpecialOffersCarousel,
         Contact,
-        Lightbox
+        Lightbox,
+        Footer,
+        HeroSection
     },
     data() {
         return {

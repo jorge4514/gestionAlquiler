@@ -1,4 +1,3 @@
 module.exports = {
-    publicPath: '/chalets/serra/',
-  };
-  
+  publicPath: '/chalets/serra', // Si no lo has configurado aú
+};

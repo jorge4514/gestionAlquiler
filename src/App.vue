@@ -2,21 +2,28 @@
   <div id="app">
     <Header />
     <main>
-      <Principal />
+      <!-- Aquí Vue Router renderiza el componente según la ruta activa -->
+      <router-view />
     </main>
   </div>
 </template>
 
 <script>
+// Importa Vue Router y el archivo de rutas
+import Vue from "vue";
+import VueRouter from "vue-router";
 import Header from "./components/Header.vue";
-import Principal from "./components/Principal.vue";
+import router from './router'; // Asegúrate de que este es el archivo correcto
+
+// Usa Vue Router
+Vue.use(VueRouter);
 
 export default {
   name: "App",
   components: {
     Header,
-    Principal,
   },
+  router,
 };
 </script>
 

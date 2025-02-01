@@ -1,30 +1,46 @@
 <template>
-  <section class="info-section py-5" >
+  <section class="info-section py-5" aria-labelledby="chalet-info">
     <div class="container">
-      <!--<h2 class="text-center mb-4">🏘️ Chalet a Estrenar en Serra, Valencia - Alquiler en la Sierra Calderona</h2>-->
+      <!-- Título principal visible para SEO -->
+      <h2 id="chalet-info" class="text-center mb-4">
+        🏘️ Chalet a Estrenar en Serra, Valencia - Alquiler en la Sierra Calderona
+      </h2>
+
       <!-- Contenedor con el texto y la card de ubicación alineados -->
       <div class="row mt-4">
         <!-- Texto principal -->
         <div class="col-md-7 align-items-center">
-          <p v-if="showFullText" class="lead text-justify">
+          <h3 v-if="showFullText" class="lead text-justify" style="font-size: 20px;">
             Este chalet pareado, totalmente nuevo, ofrece unas vistas espectaculares en la hermosa Sierra Calderona, en el municipio de Serra, Valencia. Disfruta de un amplio salón, 3 habitaciones con armarios empotrados, cocina office, baño completo, jardín privado y una zona comunitaria con piscina. ¡El lugar perfecto para vivir tranquilo pero cerca de la ciudad!
-          </p>
+          </h3>
           
-          <p v-if="showFullText" class="text-justify" :style="{ display: 'block' }">
+          <h4 v-if="showFullText" class="lead text-justify" style="display:block;font-size: 20px;">
             Ubicado a tan solo 20 minutos de las hermosas playas de Valencia y con fácil acceso a importantes vías de comunicación. Este chalet te permite vivir rodeado de naturaleza sin renunciar a la comodidad de la ciudad. ¡Contáctanos ahora para más información y agenda tu visita sin compromiso!
-          </p>
+          </h4>
 
-          <p v-if="showFullText" class="text-justify">
+          <h5 v-if="showFullText" class="text-justify" style="font-size: 20px;">
             📍 Serra, Valencia. A solo 20 minutos de la playa, con acceso rápido a la ciudad y rodeado de naturaleza, ¡disfruta de una ubicación privilegiada!
-          </p>
+          </h5>
           
+          <!-- Botón de "Leer más" con accesibilidad -->
           <div class="read-more-button text-center" v-if="isMobile()">
-            <button v-if="!showFullText" @click="toggleText" class="btn btn-primary text-center">Leer más</button>
-            <button v-if="showFullText" @click="toggleText" class="btn btn-secondary text-center">Leer menos</button>
+            <button 
+              v-if="!showFullText" 
+              @click="toggleText" 
+              class="btn btn-primary text-center"
+              aria-expanded="false" 
+              aria-controls="full-text">
+              Leer más
+            </button>
+            <button 
+              v-if="showFullText" 
+              @click="toggleText" 
+              class="btn btn-secondary text-center"
+              aria-expanded="true" 
+              aria-controls="full-text">
+              Leer menos
+            </button>
           </div>
-          
-          
-          
         </div>
 
         <!-- Card de Ubicación -->
@@ -40,7 +56,8 @@
                 height="250" 
                 style="border:0;" 
                 allowfullscreen="" 
-                loading="lazy">
+                loading="lazy" 
+                aria-label="Mapa de la ubicación del chalet en Serra, Valencia">
               </iframe>
             </div>
           </div>
@@ -70,7 +87,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .info-section {
   background-color: #f9f9f9;
@@ -97,7 +113,7 @@ export default {
 .info-section .lead {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #007bff;
+  color: #495c70;
 }
 
 .card {

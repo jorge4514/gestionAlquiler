@@ -37,29 +37,41 @@ export default {
             lightboxVisible: false,
             currentImage: null,
             featuredImages: [
-                "IMG_7257.jpg",
-                "IMG_7261.jpg",
-                "IMG_7231.jpg",
-                "castillo-serra.webp"
+                {
+                    image:"castillo-serra.webp",
+                    title: "Castillo de Serra"
+                },
+                {   
+                    image: "IMG_7257.webp",
+                    title: "Pueblo de Serra Valencia"
+                },
+                {
+                    image: "IMG_7261.webp",
+                    title: "Pueblo de Serra Valencia"
+                },
+                {
+                    image: "IMG_7231.webp",
+                    title: "Montañas de Serra"
+                }               
             ],
             specialOffers: [
                 { 
-                    image: "IMG_5163.jpg", 
+                    image: "IMG_5163.webp", 
                     description: "Despierta cada día con espectaculares vistas a la Sierra Calderona. Naturaleza y tranquilidad a solo un paso." 
                 },
                 { 
-                    image: "IMG_7033.jpg", 
+                    image: "IMG_7033.webp", 
                     description: "Reserva ahora y vive la experiencia perfecta en un entorno único." 
                 },
                 { 
-                    image: "IMG_7084.jpg", 
+                    image: "IMG_7084.webp", 
                     description: "Relájate en nuestra piscina comunitaria con impresionantes vistas a la montaña. Ideal para disfrutar en familia." 
                 },
             ],
             properties: [
-                { images: ["IMG_7171.jpg", "IMG_1636.jpg", "IMG_1986.jpg"] },
-                { images: ["IMG_7231.jpg", "IMG_7231.jpg", "IMG_7231.jpg"] },
-                { images: ["IMG_7257.jpg", "IMG_7257.jpg", "IMG_7231.jpg"] }
+                { images: ["IMG_7171.webp", "IMG_1636.webp", "IMG_1986.webp"] },
+                { images: ["IMG_7231.webp", "IMG_7231.webp", "IMG_7231.webp"] },
+                { images: ["IMG_7257.webp", "IMG_7257.webp", "IMG_7231.webp"] }
             ]
         };
     },

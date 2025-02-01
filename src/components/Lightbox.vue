@@ -5,7 +5,7 @@
         <button class="btn-close btn-close-white position-absolute top-0 end-0 m-3" aria-label="Close" @click="close"></button>
         
         <!-- Imagen dentro del lightbox -->
-        <img :src="image" class="img-fluid lightbox-image" />
+        <img :src="image" class="img-fluid lightbox-image" loading="lazy"/>
       </div>
     </div>
   </template>

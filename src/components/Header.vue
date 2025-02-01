@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#inicio">Inicio</a>
+              <a class="nav-link" href="/chalets/serra/#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#propiedades">Propiedades</a>
+              <a class="nav-link" href="/chalets/serra/#propiedades">Propiedades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="/chalets/serra/#contacto">Contacto</a>
             </li>
           </ul>
         </div>

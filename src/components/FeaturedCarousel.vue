@@ -11,10 +11,11 @@
               :class="{ active: index === 0 }"
             >
               <img
-                :src="require(`@/assets/${image}`)"
+                :src="require(`@/assets/${image.image}`)"
                 class="d-block w-100"
-                alt="Casa destacada"
-                @click="openLightbox(require(`@/assets/${image}`))"
+                :alt="image.title"
+                @click="openLightbox(require(`@/assets/${image.image}`))"
+                loading="lazy"
               />
             </div>
           </div>

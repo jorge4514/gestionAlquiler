@@ -6,7 +6,7 @@
                 <div class="carousel-item" v-for="(offer, index) in specialOffers" :key="index" :class="{ active: index === 0 }">
                     <div class="carousel-img-container">
                         <img :src="require(`@/assets/${offer.image}`)" class="d-block w-100" alt="Oferta especial" 
-                        @click="openLightbox(require(`@/assets/${offer.image}`))" />
+                        @click="openLightbox(require(`@/assets/${offer.image}`))" loading="lazy"/>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <p class="carousel-description">{{ offer.description }}</p>
